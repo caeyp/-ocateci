@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Oci & Carter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace; /* Gaya font jadul/aesthetic */
+            
+            /* Background Doodle Fisika Menggunakan SVG Murni agar Ringan & Tajam */
+            background-color: #f7f9fa;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23b0bec5' fill-opacity='0.25'%3E%3Cpath d='M10 20 L25 20 M17 12 L17 28' stroke='%23b0bec5' stroke-width='1'/%3E%3Ctext x='45' y='25' font-family='sans-serif' font-size='10' font-weight='bold'%3EE=mc²%3C/text%3E%3Ccircle cx='20' cy='70' r='8' stroke='%23b0bec5' stroke-width='1' fill='none'/%3E%3Ccircle cx='20' cy='70' r='2' fill='%23b0bec5'/%3E%3Cpath d='M12 65 C 15 55, 25 55, 28 65' stroke='%23b0bec5' stroke-width='1' fill='none'/%3E%3Ctext x='70' y='75' font-family='sans-serif' font-size='12'%3EF=ma%3C/text%3E%3Cpath d='M65 15 Q 75 30, 85 15 T 95 15' stroke='%23b0bec5' stroke-width='1' fill='none'/%3E%3Cpath d='M10 90 L30 90 M20 85 L20 95' stroke='%23b0bec5' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E");
+            
+            overflow: hidden;
+        }
+
+        /* Kotak Surat Utama */
+        .card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 3px solid #333;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 8px 8px 0px #333; /* Efek shadow ala retro/neo-brutalism */
+            text-align: center;
+            max-width: 400px;
+            width: 85%;
+            transform: rotate(-1deg); /* Biar estetik agak miring dikit */
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4f5d75;
+            font-weight: 600;
+        }
+
+        /* Style khusus untuk kata LOR warna merah berkedip santai */
+        .highlight-red {
+            color: #ff3333;
+            font-size: 1.4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); text-shadow: 0 0 10px rgba(255,51,51,0.3); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Heyho, ocateci! 👋</h1>
+        <p>Thank you for always being there for me.</p>
+        <p>Jangan bubar ya. Jangan <span class="highlight-red">lor</span>!</p>
+    </div>
+
+</body>
+</html>
